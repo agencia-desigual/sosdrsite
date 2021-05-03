@@ -323,36 +323,130 @@ class Ajax extends CI_Controller
 	public function contatoLP()
 	{
         // Váriaveis
-        $dados   = null;
-        $envia   = null;
+        $dados = null;
+        $envia = null;
+        $curl = null;
+        $token = "16db1517-189a-4874-b5bb-58e1d627abc8";
 
 
+        // Verifica se informou a unidade
         if (!empty($_POST['id_unidade']))
         {
-            // Váriaveis POST
-            $salva = [
-                "id_unidade" => $_POST['id_unidade'],
-                "nome" => $_POST['nome'],
-                "lp" => $_POST['lp'],
-                "email" => (!empty($_POST['email']) ? $_POST['email'] : "Email não informado"),
-                "telefone" => $_POST['telefone']
+
+            // inicia a conexão
+            $curl = curl_init();
+
+            // Dados para enviar para API
+            $enviaAPI = [
+                "name" => $_POST['nome'],
+                "contact" => [
+                    "mobile" => $_POST['telefone'],
+                    "email" => (!empty($_POST['email']) ? $_POST['email'] : "")
+                ]
             ];
 
-            // Cadastre o role
-            if($this->lead->insert($salva) != false)
+            // Array de configuração
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://api.agendor.com.br/v3/people",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => "",
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 30,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => "POST",
+                CURLOPT_POSTFIELDS => json_encode($enviaAPI),
+                CURLOPT_HTTPHEADER => array(
+                    "authorization: Token ".$token,
+                    "cache-control: no-cache",
+                    "content-type: application/json"
+                ),
+            ));
+
+            // Executa e pega o retonro
+            $retorno = curl_exec($curl);
+            $err = curl_error($curl);
+
+            // Fecha a conexão
+            curl_close($curl);
+
+            // Valida para ver se teve erro
+            if($err)
             {
-                $dados = array(
-                    "tipo" => true,
-                    "mensagem" => "Em breve entraremos em contato."
-                );
+                // Mostra a mensagem de erro
+                echo "cURL Error #:" . $err;
             }
             else
             {
-                $dados = array(
-                    "tipo" => false,
-                    "mensagem" => "Ops! Ocorreu algum erro ao enviar os dados."
-                );
+
+                // Decodifica o JSON
+                $retorno = json_decode($retorno);
+
+                // inicia a segunda conexão
+                $curl2 = curl_init();
+
+                // Dados para enviar para API
+                $enviaAPI2 = [
+                    "title" => $_POST['lp'],
+                ];
+
+                curl_setopt_array($curl2, array(
+                    CURLOPT_URL => "https://api.agendor.com.br/v3/people/".$retorno->data->id."/deals",
+                    CURLOPT_RETURNTRANSFER => true,
+                    CURLOPT_ENCODING => "",
+                    CURLOPT_MAXREDIRS => 10,
+                    CURLOPT_TIMEOUT => 30,
+                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                    CURLOPT_CUSTOMREQUEST => "POST",
+                    CURLOPT_POSTFIELDS => json_encode($enviaAPI2),
+                    CURLOPT_HTTPHEADER => array(
+                        "authorization: Token ".$token,
+                        "cache-control: no-cache",
+                        "content-type: application/json"
+                    ),
+                ));
+
+                $retorno2 = curl_exec($curl2);
+                $err2 = curl_error($curl2);
+
+                curl_close($curl2);
+
+                if ($err2)
+                {
+                    echo "cURL Error #:" . $err2;
+                }
+                else
+                {
+                    // Váriaveis POST
+                    $salva = [
+                        "id_unidade" => $_POST['id_unidade'],
+                        "id_api" => $retorno->data->id,
+                        "nome" => $_POST['nome'],
+                        "lp" => $_POST['lp'],
+                        "email" => (!empty($_POST['email']) ? $_POST['email'] : "Email não informado"),
+                        "telefone" => $_POST['telefone']
+                    ];
+
+                    // Cadastre o role no bdd
+                    if($this->lead->insert($salva) != false)
+                    {
+                        $dados = array(
+                            "tipo" => true,
+                            "mensagem" => "Em breve entraremos em contato."
+                        );
+                    }
+                    else
+                    {
+                        $dados = array(
+                            "tipo" => false,
+                            "mensagem" => "Ops! Ocorreu algum erro ao enviar os dados."
+                        );
+                    }
+
+                }
+
             }
+
+
         }
         else
         {
