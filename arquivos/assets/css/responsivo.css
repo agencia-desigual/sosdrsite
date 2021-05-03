@@ -1,0 +1,548 @@
+
+@media(max-width: 1600px)
+{
+  .banner-geral,
+  .servicos.capa,
+  .banner{background-size: auto 100%;}
+
+  .quem-somos .barra-sobre .imagem{background-position: right;}
+}
+
+@media(max-width: 1500px)
+{
+  .modalVd iframe{height: 418px; width: 700px;}
+}
+
+
+@media(max-width: 1400px)
+{
+  .banner .s2
+  {
+    background-position-x: -280px;
+  }
+}
+
+
+@media (max-width: 1300px) {
+  .img-preco-oftalmo{
+    background-size: 100% auto;
+  }
+}
+
+
+@media(max-width: 1200px)
+{
+  header nav ul li.login ul{left: 23px;}
+
+  .quem-somos .barra-slider .imagem{background-position-x: -320px;}
+
+
+  .pg-lp-mediciatrabalho .grupoEtapas .velho{width: 200px;}
+
+  .pg-lp-mediciatrabalho .etapa-5 .alinha-lp,
+  .pg-lp-mediciatrabalho .grupoEtapas .conteudo{margin-left: 200px;}
+
+  .pg-lp-mediciatrabalho .etapa-6 .conteudo
+  {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+  }
+
+
+  .pg-lp-mediciatrabalho .grupoEtapas .conteudo .blocos .item-bloco
+  {
+    border: 3px solid #ef2d30;
+    border-radius: 15px;
+    background-image: url("");
+    width: calc(50% - 85px);
+  }
+
+  .pg-lp-mediciatrabalho .grupoEtapas .conteudo .bloco.bloco-3 .blocos .item-bloco
+  {
+    width: calc(50% - 85px);
+  }
+
+
+  .pg-lp-mediciatrabalho .timeline .item-3{top: 879px;}
+  .pg-lp-mediciatrabalho .timeline .item-4{top: 1347px;}
+
+}
+
+
+
+
+
+
+@media(max-width: 1160px)
+{
+  .servicos.itens .item p{display: none;}
+
+  .bg-preco-oftalmo{ background-size: contain }
+}
+
+
+@media(max-width: 1100px)
+{
+  .banner .s2
+  {
+    background-position-x: -469px;
+  }
+}
+
+
+
+@media(max-width: 1040px)
+{
+  header nav{display: none;}
+  header .btn-responsivo{display: block;}
+}
+
+
+@media(max-width: 1000px)
+{
+  footer .superior nav ul li{font-size: 0.7em;}
+}
+
+
+@media(max-width: 950px)
+{
+  .quem-somos .barra-sobre .imagem{display: none;}
+  .quem-somos .barra-sobre .texto{width: 100%; padding: 60px 0px;}
+
+  .quem-somos .barra-slider .none-img,
+  .quem-somos .barra-sobre .none-img
+  {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+
+  .quem-somos .barra-slider .imagem{display: none;}
+  .quem-somos .barra-slider .alinha
+  {
+    width: 100%;
+    float: initial;
+  }
+
+  .quem-somos .barra-slider .owl-theme .owl-dots
+  {
+    width: 100%;
+    left: 0px;
+    text-align: center;
+  }
+}
+
+
+@media(max-width: 900px)
+{
+  .dicas #dicas .conteudo .imagem{display: none;}
+  .servicos.itens .item p{height: 180px;}
+
+  .quem-somos .barra-icones .item{width: 50%;}
+  .quem-somos .barra-icones .item:nth-child(5){margin-left: 0px;}
+
+  .quem-somos .barra-icones .item:nth-child(7){margin-left: 25%;}
+
+
+  .quem-somos .barra-bola .circulo{width: 600px; height: 300px;}
+  .quem-somos .barra-bola .gm .degrade{height: 150px}
+
+  .quem-somos .barra-mvv .col-2{padding: 20px 0px;}
+
+  .quem-somos .barra-mvv .item ul{float: initial; width: calc(100% - 20px);}
+  .quem-somos .barra-mvv .item ul.lista2{padding-top: 0px;}
+
+  .bg-lp-cardiologia-secao-1{ background-position: left; height: auto !important; padding-bottom: 50px !important; }
+}
+
+
+@media(max-width: 870px)
+{
+  .banner .s2
+  {
+    background-position-x: -2px;
+  }
+
+  .banner .s2 .texto
+  {
+    padding: 80px 0px;
+    max-width: 450px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .banner .texto .cor
+  {
+    width: 90%;
+    display: block;
+    margin: 28px auto;
+  }
+}
+
+
+
+
+@media(max-width: 860px)
+{
+  .servicos.itens .item .botoes
+  {
+    width: 230px;
+  }
+
+  .servicos.itens .item{text-align: center;}
+
+
+  .servicos.itens .item h3
+  {
+    width: 200px;
+  }
+
+  .img-preco-oftalmo{
+    background-size: contain;
+    height: 300px;
+  }
+
+}
+
+
+@media(max-width: 800px)
+{
+  .agenda .col-3 button{font-size: 1em;}
+  .agenda .col-3 p{font-size: 0.9em;}
+
+  .icones h4{font-size: 1em;}
+  .icones p{font-size: 0.9em;}
+
+  .instagram .texto p{padding-right: 30px;}
+
+  .banner .titulo{font-size: 2.2em;}
+  .banner .subtitulo{font-size: 0.8em;}
+  .banner p{font-size: 0.8em;}
+}
+
+
+@media(max-width: 790px)
+{
+
+  .div-servicos-consultas{
+    width: 100%;
+  }
+  .btn-servicos-consultas-odonto{
+    width: 100%;
+  }
+  .btn-servicos-consultas-exames{
+    width: 100%;
+  }
+  .btn-servicos-consultas-especialidades{
+    width: 100%;
+  }
+  .icones .col-3{padding: 40px 0px;}
+
+  .aplicativo .divCelular{display: none;}
+  .aplicativo .col-2{padding-bottom: 100px;}
+  .aplicativo .texto{text-align: center; padding-left: 0px;}
+
+  .instagram{text-align: center;}
+  .instagram .col-2{padding-bottom: 50px;}
+  .instagram .img-instagram{float: none;}
+  .instagram .img-instagram:first-child{display: none;}
+
+  .agenda .col-3{padding: 50px 0px;}
+
+  .col-3,
+  .col-2{width: 100%;}
+
+  .servico-interno .border{border: 0px;}
+
+  form .col-2 .p-l-10,
+  form .col-2 .p-r-10{padding: 0px;}
+
+  form .col-2 .p-l-10{padding: 20px 0px;}
+
+  footer{text-align: center;}
+  footer .superior nav{display: none;}
+  footer .inferior p{float: none;}
+  footer .inferior .desigual{float: none; margin-top: 30px;}
+
+  .modalVd iframe{height: 290px;width: 500px;}
+}
+
+
+
+@media(max-width: 770px)
+{
+  .pg-lp-mediciatrabalho .grupoEtapas .velho{width: 30px;}
+
+  .pg-lp-mediciatrabalho .etapa-5 .alinha-lp,
+  .pg-lp-mediciatrabalho .grupoEtapas .conteudo{margin-left: 30px;}
+
+  .pg-lp-mediciatrabalho .etapa-6 .conteudo
+  {
+    max-width: calc(100% - 160px);
+    margin-left: 30px;
+  }
+
+  .pg-lp-mediciatrabalho .etapa-6 .corpo h2{bottom: 25px;}
+  .pg-lp-mediciatrabalho .etapa-6 .corpo{min-height: 630px;}
+
+  .pg-lp-mediciatrabalho .grupoEtapas .conteudo .bloco.bloco-3 .blocos .item-bloco
+  {
+    min-height: 120px;
+  }
+  .col-4-icones{ width: 100% }
+
+  .bg-preco-oftalmo{
+    display: none;
+  }
+
+  .precos-mobile-oftalmo{
+    display: block;
+  }
+  .btn-agende-ja {
+    width: 160px !important;
+    padding: 17px !important;
+    font-size: 13px !important;
+    position: relative !important;
+    left: -100px !important;
+  }
+}
+
+
+
+@media(max-width: 650px)
+{
+  .quem-somos .barra-bola .circulo{width: 400px; height: 200px;}
+  .quem-somos .barra-bola .gm .degrade{height: 80px;}
+}
+
+@media(max-width: 640px)
+{
+  /* .banner .btn{display: block;} */
+  /* .banner p{font-size: 1em;} */
+
+  .banner .btn p.ativoPC{display: none;}
+  .banner .btn p.ativoCEL{display: inline;}
+
+  .instagram .img-instagram{width: calc((100% / 3) - 25px);}
+}
+
+
+@media(max-width: 630px)
+{ 
+  .servicos.itens .item .botoes
+  {
+      top: 10px;
+      position: inherit;
+      width: 100%;
+      margin-top: 117px;
+      margin-bottom: 22px;
+      margin-left: 30%;
+  }
+
+  .servicos.itens .item h3
+  {
+    width: calc(100% - 210px);
+  }
+
+
+  .pg-lp-mediciatrabalho .etapa-6 .corpo .social .selo{display: none;}
+  .pg-lp-mediciatrabalho .etapa-6 .corpo{padding-top: 420px;}
+
+  .pg-lp-mediciatrabalho .etapa-7 .divVermelha
+  {
+    width: 90%;
+  }
+
+  .pg-lp-mediciatrabalho .etapa-5 .alinha-lp{width: 100%;}
+
+  .pg-lp-mediciatrabalho .grupoEtapas .conteudo .blocos .item-bloco
+  {
+    width: calc(100% - 85px);
+  }
+
+
+  .pg-lp-mediciatrabalho .timeline .item-3{top: 1342px;}
+  .pg-lp-mediciatrabalho .timeline .item-4{top: 1888px;}
+
+  .icone-50-odonto{ margin-top: 15px; margin-left: 0px; }
+
+}
+
+
+
+
+@media(max-width: 530px)
+{
+  .banner form button{font-size: 1em;}
+
+  .modalVd iframe{height: 176px; width: 300px;}
+}
+
+
+@media(max-width: 520px)
+{
+  .pg-lp-mediciatrabalho .etapa-6 .corpo .lado
+  {
+    width: calc(100% - 20px);
+  }
+
+  .pg-lp-mediciatrabalho .etapa-6 .corpo .social{width: 230px; position: initial;}
+  .pg-lp-mediciatrabalho .etapa-6 .corpo{min-height: 800px; margin-left: -66px;}
+
+  .pg-lp-mediciatrabalho .timeline
+  {
+    width: 75px;
+  }
+
+  .pg-lp-mediciatrabalho .grupoEtapas .velho{width: 23px;}
+  .pg-lp-mediciatrabalho .timeline .linha{left: 43px;}
+
+  .pg-lp-mediciatrabalho .grupoEtapas .conteudo .bloco{padding-left: 75px;}
+
+  .pg-lp-mediciatrabalho .timeline .item.item-7 img,
+  .pg-lp-mediciatrabalho .timeline .item.item-6 img,
+  .pg-lp-mediciatrabalho .timeline .item.item-5 img{width: 47px;}
+
+  .pg-lp-mediciatrabalho .timeline .item-7,
+  .pg-lp-mediciatrabalho .timeline .item-5{bottom: -25px;}
+
+  .pg-lp-mediciatrabalho .etapa-7 .divVermelha p
+  {
+    font-size: 0.9em;
+  }
+
+  .pg-lp-mediciatrabalho .grupoEtapas .conteudo .bloco h3,
+  .pg-lp-mediciatrabalho .etapa-7 h2{font-size: 1.3em;}
+
+
+  .pg-lp-mediciatrabalho .grupoEtapas .conteudo .bloco.bloco-3 .blocos .item-bloco
+  {
+    min-height: auto;
+    width: calc(100% - 85px);
+  }
+
+
+  .pg-lp-mediciatrabalho .timeline .item-4{top: 2129px;}
+  .pg-lp-mediciatrabalho .banner{background-position-x: -485px;}
+
+  .icone-80{ margin-top: 20px }
+}
+
+
+
+
+
+@media(max-width: 500px)
+{
+  .banner .btn{margin: 5px; padding: 15px;}
+  .banner .btn span{display: none;}
+
+  .banner .input select{font-size: 0.7em;}
+}
+
+
+@media(max-width: 450px)
+{
+  .banner .input{width: calc(100% - 20px); margin-bottom: 20px;}
+  .banner form button{margin: 0px; width: 100%;}
+
+  .dicas #dicas .conteudo .texto h5{font-size: 1.5em;}
+  .dicas #dicas .conteudo .texto{font-size: 0.9em; padding-bottom: 30px;}
+
+  .dicas .owl-theme .owl-nav{display: none;}
+
+  .servicos.capa .titulo{font-size: 2.9em;}
+  .servicos.capa .input button{font-size: 2.4em; width: 60px;}
+  .servicos.capa .input input{width: calc(100% - 90px)}
+
+  .modalLogin .conteudo form{padding-top: 0px;}
+  .modalLogin .conteudo form .row button
+  {
+    float: initial;
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .modalLogin .conteudo form .row a{float: initial; padding-top: 15px; display: block;}
+
+  .modalLogin .conteudo p.cadastro a{display: block; padding-top: 5px;}
+
+  .newsletter{background-position-x: -637px; background-size: auto;}
+  .newsletter h4{font-size: 2.8em;}
+  .newsletter .subtitulo{font-size: 1em;}
+
+
+  .quem-somos .barra-icones .item{width: 100%; float: initial;}
+  .quem-somos .barra-icones .item:nth-child(7){margin-left: 0px;}
+
+  .quem-somos .barra-bola .circulo{width: 280px; height: 150px;}
+}
+
+
+@media(max-width: 430px)
+{
+  .banner .s2{min-height: 750px;}
+  .banner .s2 .texto h1
+  {
+    font-size: 2.2em;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .servicos.itens .item button.btn-telefone{
+    width: 170px;
+  }
+  .servicos.itens .item button.btn-whats{
+    width: 170px;
+  }
+  .icones-contato{ margin-left: 0px }
+}
+
+@media(max-width: 400px)
+{
+  .instagram .img-instagram
+  {
+    width: calc((100% / 3) - 15px);
+    margin: 20px 5px;
+  }
+
+  .banner-geral .titulo{font-size: 2.2em;}
+
+  .servico-interno .size-20,
+  .servico-interno .size-25{font-size: 1.5em;}
+
+  .servico-interno p{font-size: 0.9em;}
+
+
+  .newsletter input{width: 260px;}
+
+
+
+  .servicos.itens .item img
+  {
+    position: absolute;
+    top: 22px;
+    left: 19px;
+    width: 83px;
+  }
+
+  .servicos.itens .item h3
+  {
+    width: calc(100% - 143px);
+    left: 124px;
+    font-size: 0.9em;
+  }
+
+  .texto-voce-sabia{
+    padding: 70px;
+    font-size: 25px;
+  }
+  
+}

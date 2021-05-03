@@ -1,0 +1,1504 @@
+body{overflow-x: hidden;}
+
+a{cursor: pointer;}
+
+menu
+{
+  position: fixed;
+  z-index: 900;
+  top: 0px; left: -300px;
+  width: 280px; height: 100%;
+  padding: 0px; margin: 0px;
+  background: #03428d;
+}
+
+menu .logo
+{
+  background: #053a79;
+  width: 100%;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+menu .tudo{width: 100%; overflow-x: hidden;}
+menu .tudo .conteudo{width: 200%;}
+menu .tudo .conteudo ul{width: 50%; float: left;}
+
+menu .tudo .conteudo ul li{padding: 17px 10px; border-bottom: 1px solid rgba(255,255,255,0.1);}
+menu .tudo .conteudo ul li a{color: #fff; text-transform: uppercase; display: block; width: 100%;}
+
+menu .tudo .conteudo ul li:last-child{border: 0px;}
+
+menu .tudo .conteudo ul li.submenu a i{float: right;}
+menu .tudo .conteudo ul li.subvoltar{background: #04336b;}
+menu .tudo .conteudo ul li.subvoltar a i{float: left; padding-right: 30px;}
+
+menu .tudo .conteudo ul li.login{padding-top: 50px;}
+
+#fechaMenu
+{
+  width: 100%; height: 100%;
+  top: 0px; left: 0px;
+  position: fixed;
+  background: rgba(0,0,0,0.6);
+  z-index: 800;
+  opacity: 0;
+  display: none;
+}
+
+/* --- Header --- */
+
+.espaco-vermelho
+{
+   text-align: center;
+   background: #ef2d2f;
+   margin-bottom: 30px;
+}
+
+.espaco-vermelho p
+{
+   color: #fff;
+   font-size: 0.9em;
+   padding: 5px 0px;
+}
+
+header
+{
+  padding: 20px 0px 20px;
+  background-color: #eeeeee;
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 100%; height: 74px;
+}
+
+header img.logo-bnc{display: none;}
+header img.logo-azul{display: inherit;}
+
+header nav{float: right; padding-top: 10px;}
+header nav ul li{display: inline-block; padding: 10px 20px;}
+header nav ul li.login{padding-left: 50px;}
+header nav ul li a{text-transform: uppercase; color: #1d346e; font-size: 0.7em;}
+
+header nav ul li.login i{padding-right: 10px;}
+header nav ul li a.ativo{color: #0094d6;}
+header nav ul li a:hover{color: #0094d6;}
+
+header nav ul li.login,
+header nav ul li.submenu{position: relative; padding-bottom: 20px;}
+
+header nav ul li.submenu a i{padding-left: 5px;}
+
+header nav ul li.login ul,
+header nav ul li.submenu ul
+{
+  position: absolute;
+  width: 109px;
+  background: #eeeeee;
+  padding: 0px;
+  margin:  0px;
+  left: 10px;
+  overflow-y: hidden;
+  height: 0px;
+  border-radius: 10px;
+}
+
+header nav ul li.login ul
+{
+  width: 103px;
+  left: 66px;
+  padding-top: 8px;
+}
+
+header nav ul li.login ul li button
+{
+  border: 0px;
+  background: #fd4f4e;
+  color: #fff;
+  text-transform: unset;
+  text-align: center;
+  padding: 8px 30px;
+  font-size: 0.9em;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+header nav ul li.login ul li button:hover{background: #e64c4b;}
+
+header nav ul li.login:hover ul{height: 78px;}
+header nav ul li.submenu:hover ul{height: 105px; z-index: 9999}
+
+header nav ul li.login ul li,
+header nav ul li.submenu ul li{padding: 4px 10px; display: block;}
+
+header .btn-responsivo
+{
+  float: right;
+  border: 0px;
+  background: transparent;
+  font-size: 2em;
+  margin-top: 10px;
+  color: #1d346e;
+  display: none;
+}
+
+header.fixo
+{
+  position: fixed;
+  background-color: #03428d;
+  z-index: 600;
+  height: 44px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+  top: 0px;
+}
+
+header.fixo img{width: 120px;}
+header.fixo img.logo-bnc{display: inherit;}
+header.fixo img.logo-azul{display: none;}
+
+header.fixo nav{padding: 0px;}
+header.fixo nav ul li a{color: #fff; opacity: 1;}
+header.fixo nav ul li a:hover{opacity: 0.7;}
+header.fixo nav ul li.submenu ul{background-color: #03428d;}
+
+header.fixo nav ul li.login ul{background-color: #03428d;}
+header.fixo nav ul li.login ul li{color: #fff;}
+
+
+header.fixo .btn-responsivo
+{
+  font-size: 1.5em;
+  color: #fff;
+  margin-top: 0px;
+}
+
+
+.gambis-header
+{
+  display: block;
+  height: 94px; width: 1;
+}
+
+/* --- Banner --- */
+.banner
+{
+  background-image: url("../img/bg/banner-home.png");
+  background-size: 100% auto; padding: 60px 0px;
+}
+
+.banner p{color: #fff;}
+.banner .titulo{font-size: 2.7em; padding-bottom: 35px;}
+.banner .subtitulo{padding-bottom: 40px;}
+
+.banner .btn
+{
+  display: inline-block;
+  margin: 10px; padding: 20px;
+  cursor: pointer;
+  font-family: "FilsonSoft";
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #fff;
+}
+
+.banner .btn span
+{
+  display: block;
+  width: 15px; height: 15px;
+  border-radius: 100%; border: 2px solid #fff;
+  float: left;
+  margin-right: 15px;
+}
+
+.banner .btn.selecionado{background-color: #0094d6; border-color: #0094d6;}
+
+.banner .btn:hover span,
+.banner .btn.selecionado span{background-color: #27448b;}
+
+.banner .btn p{display: inline;}
+.banner .btn p.ativoCEL{display: none;}
+
+.banner form
+{
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 850px;
+}
+
+
+.banner .input
+{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 10px;
+  width: 70%;
+  height: 30px;
+  float: left;
+  position: relative;
+  font-size: 1.7em;
+}
+
+.banner .input i
+{
+  position: absolute;
+  right: 10px; top: 15px;
+  color: #0094d6;
+  font-size: 1.3em;
+  z-index: 9;
+}
+
+.banner .input select
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+
+  position: absolute;
+  z-index: 10;
+  width: calc(100% - 35px);
+  height: 100%;
+  top: 0px; left: 30px;
+  border: 0px;
+  font-size: 0.8em;
+  background: transparent;
+  color: #989898;
+}
+
+.banner form button
+{
+  width: calc(30% - 40px);
+  background-color: #fd4f4f;
+  border: 0px;
+  margin-left: 20px;
+  padding: 0px;
+  height: 70px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.banner form button:hover{background-color: #ef2c2c;}
+
+
+/* --- Icones Home --- */
+.icones{background-color: #eee; padding: 90px 0px;}
+.icones img{max-width: 90%; margin-bottom: 20px;}
+.icones h4
+{
+  color: #0094d6;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+.icones p{color: #8b8b8b; font-size: 1.2em;}
+
+
+/* --- Aplicativo Home ---- */
+.aplicativo{background-color: #0094d6; padding-top: 40px; color: #fff;}
+.aplicativo .celular{margin-bottom: -4px; max-width: 100%;}
+
+.aplicativo .texto{padding-left: 30px;}
+.aplicativo .texto h3
+{
+  font-size: 3.5em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 70px 0px 50px;
+}
+
+.aplicativo .texto p
+{
+  padding-bottom: 50px;
+  font-size: 1.3em;
+  font-weight: lighter;
+}
+
+/* --- Ahende sua consulta ---*/
+.div-servicos-consultas{
+  background-color: #efefef;
+  height: 140px;
+  width: 80%;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.img-servicos-consulta{
+  width: 45px;
+  display: inline;
+  padding: 20px;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.titulo-servicos-consulta{
+  font-size: 1.2em;
+  line-height: 1em;
+  font-weight: bold;
+  vertical-align: middle;
+  display: inline;
+  color: #03428D;
+  text-align: left;
+}
+
+.btn-servicos-consultas-telefone{
+  background-color: transparent;
+  color: #03428d;
+  font-weight: 900;
+  padding: 7px;
+  border-radius: 15px;
+  border: 3px solid;
+  font-size: 0.7em;
+}
+
+.btn-servicos-consultas-telefone:hover{
+  background-color: #03428d;
+  color: #ffff;
+  border: 3px solid #03428d;
+}
+
+.btn-servicos-consultas-online{
+  background-color: transparent;
+  color: #fd4f51;
+  font-weight: 900;
+  padding: 7px;
+  border-radius: 15px;
+  border: 3px solid;
+  font-size: 0.7em;
+}
+
+.btn-servicos-consultas-online:hover{
+  background-color: #fd4f51;
+  color: #ffff;
+  border: 3px solid #fd4f51;
+}
+
+.btn-servicos-consultas-especialidades{
+  background-color: #03428D;
+  color: #fFFFFF;
+  font-weight: 900;
+  padding: 7px;
+  border-radius: 5px;
+  border: 3px solid #03428D;
+  font-size: 1em;
+  width: 80%;
+}
+
+.btn-servicos-consultas-especialidades:hover{
+  background-color: transparent;
+  color: #03428D;
+  border: 3px solid #03428D;
+}
+
+.btn-servicos-consultas-exames{
+  background-color: #ef2d30;
+  color: #fFFFFF;
+  font-weight: 900;
+  padding: 7px;
+  border-radius: 5px;
+  border: 3px solid #ef2d30;
+  font-size: 1em;
+  width: 80%;
+}
+
+.btn-servicos-consultas-exames:hover{
+  background-color: transparent;
+  color: #ef2d30;
+  border: 3px solid #ef2d30;
+}
+
+.btn-servicos-consultas-odonto{
+  background-color: #0095d9;
+  color: #fFFFFF;
+  font-weight: 900;
+  padding: 7px;
+  border-radius: 5px;
+  border: 3px solid #0095d9;
+  font-size: 1em;
+  width: 80%;
+}
+
+.btn-servicos-consultas-odonto:hover{
+  background-color: transparent;
+  color: #0095d9;
+  border: 3px solid #0095d9;
+}
+
+/* --- Siga a SOSDr ---- */
+.instagram
+{
+  background-color: #fd4f51;
+  background-image: url('../img/bg/bg-vermelho.png');
+  background-position: top left;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding: 90px 0px;
+}
+
+.instagram .img-instagram
+{
+  max-width: calc(50% - 25px);
+  margin: 10px;
+  float: left;
+}
+
+.instagram .texto{color: #fff;}
+.instagram .texto h3
+{
+  text-transform: uppercase;
+  font-size: 3em;
+  padding: 80px 0px 40px;
+}
+
+.instagram .texto p
+{
+  font-weight: lighter;
+  font-size: 1em;
+  padding-bottom: 30px;
+}
+
+.instagram .texto span
+{
+  font-size: 3.5em;
+  padding: 10px;
+}
+
+.instagram .icone.color-branco:hover
+{
+  color: #03428d;
+}
+
+.instagram .img-instagram:nth-child(3){display: none;}
+
+/* --- Slide Dicas --- */
+.dicas
+{
+  padding: 80px 0px;
+}
+
+.dicas #dicas .conteudo
+{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.dicas #dicas .conteudo .imagem
+{
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.dicas #dicas .conteudo .imagem img{width: 60%;}
+.dicas #dicas .conteudo .texto h5
+{
+  font-size: 2em;
+  color: #04428b;
+  padding-bottom: 20px;
+}
+
+.dicas #dicas .conteudo .texto{font-size: 1em; color: #8f8f8f;}
+
+
+.dicas .owl-theme .owl-dots .owl-dot.active span,
+.dicas .owl-theme .owl-dots .owl-dot:hover span
+{
+  background: #0094d9;
+  border-color: #0094d9;
+}
+
+.dicas .owl-theme .owl-dots .owl-dot span
+{
+  border: 1px solid #8f8f8f;
+  background: #fff;
+}
+
+.dicas .owl-theme .owl-nav .owl-prev
+{
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  font-size: 7em;
+  background: transparent;
+  color: #eeeeee;
+}
+
+
+.dicas .owl-theme .owl-nav .owl-next
+{
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  font-size: 7em;
+  background: transparent;
+  color: #eeeeee;
+}
+
+.agenda{padding: 60px 0px;}
+.agenda .col-3 .centraliza{width: 70%;}
+
+.agenda .col-3 button
+{
+  width: 100%;
+  padding: 20px 0px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #0094d9;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.agenda .col-3 p
+{
+  padding-top: 20px;
+  font-size: 1.2em;
+  color: #8f8f8f;
+}
+
+
+/* Footer */
+footer
+{
+  background-color: #03428d;
+  padding: 50px 0px 30px;
+}
+
+
+footer .superior
+{
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+footer .superior nav{float: right;}
+footer .superior nav ul li{display: inline-block; padding: 10px 15px;}
+footer .superior nav ul li a{color: #0095db; font-weight: bold; text-transform: uppercase;}
+
+footer .inferior a i{color: #fff; font-size: 1.5em; padding: 5px;}
+footer .inferior a i:hover{color: #0095db;}
+footer .inferior{padding-top: 30px;}
+footer .inferior p{color: #fff; font-size: 0.8em; float: left;}
+footer .inferior .desigual{float: right;}
+
+
+
+/**
+ * ----------------------------------------------
+ *               Páginas Internas
+ * ----------------------------------------------
+ */
+
+
+  /* --- Serviços --- */
+  .servicos.capa
+  {
+    /*background-image: url("../img/bg/bg-servicos.jpg");*/
+    /*background-size: 100% auto; padding: 50px 0px;*/
+    /*background-position: center;*/
+    /*color: #fff;*/
+  }
+
+  .servicos.capa .titulo{font-size: 3.5em; padding-bottom: 40px;}
+  .servicos.capa .subtitulo{font-size: 1.5em; padding-bottom: 70px;}
+
+  .servicos.capa .input
+  {
+    width: 90%;
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 50px;
+    position: relative;
+  }
+
+  .servicos.capa .input button
+  {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    font-size: 1.3em;
+    color: #0096d8;
+    background: #eee;
+    border: none;
+    width: 50px;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .servicos.capa .input input
+  {
+    position: absolute;
+    top: 0px; left: 0px;
+    height: 100%;
+    width: calc(100% - 130px);
+    padding: 0px 0px 0px 30px;
+    border: 0px;
+    background: transparent;
+    font-size: 1.5em;
+  }
+
+
+
+  /*.servicos.itens{padding: 90px 0px;}*/
+  .servicos.itens .item
+  {
+    background-color: #eeeeee;
+    border-radius: 15px;
+    min-height: 110px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    position: relative;
+    margin: 20px 0px;
+  }
+
+  .servicos.itens .item img 
+  {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .servicos.itens .item h3
+  {
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    color: #2f4074;
+  }
+
+  .servicos.itens .item .capa
+  {
+    background: #2f4074;
+    padding: 20px 0px;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .servicos.itens .item h4
+  {
+    color: #2f4074;
+    font-size: 1.3em;
+    padding: 30px 0px;
+  }
+
+  .servicos.itens .item p
+  {
+    padding: 0px 20px;
+    color: #8a8a8a;
+    font-size: 0.9em;
+    width: 200px;
+    position: absolute;
+    top: 33px;
+    left: 330px;
+  }
+
+  .servicos.itens .item p span
+  {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .servicos.itens .item .botoes
+  {
+    position: absolute;
+    right: 10px;
+    top: 36px;
+  }
+
+  .servicos.itens .item .preco
+  {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.7em;
+    color: #8a8a91;
+    font-weight: bold;
+  }
+
+  .servicos.itens .item button
+  {
+    border: 2px solid #0094d6;
+    color: #0094d6;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 12px 30px;
+    border-radius: 15px;
+    margin: 0px 5px;
+  }
+
+  .servicos.itens .item button.btn-telefone
+  {
+    display: block;
+    border: 2px solid #2f4074;
+    color: #2f4074;
+    margin-right: 10px;
+    width: 191px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+  }
+
+  .servicos.itens .item button.btn-whats
+  {
+    border: 2px solid #ce3133;
+    color: #ce3133;
+    width: 185px;
+    font-size: 12px;
+    display: block;
+  }
+
+  .servicos.itens .item button.btn-telefone:hover
+  {
+    color: #fff;
+    background-color: #2f4074;
+  }
+
+  .servicos.itens .item button.btn-whats:hover
+  {
+    color: #fff;
+    background-color: #ce3133;
+  }
+
+
+
+  #carregando{text-align: center; padding: 30px 0px;}
+  #carregando img{max-width: 90%;}
+
+
+  /* ---- Login ----- */
+
+  .modalLogin
+  {
+    position: fixed;
+    top: 0px; left: 0px;
+    width: 100%; height: 100%;
+    z-index: 999;
+    opacity: 0;
+    display: none;
+  }
+
+  .modalLogin .conteudo
+  {
+    z-index: 100;
+    width: calc(80% - 40px);
+    max-width: calc(400px - 40px);
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 20px;
+    max-height: 70%;
+    /* overflow-y: auto; */
+    position: relative;
+  }
+
+  .modalLogin .conteudo img{max-width: 100%;}
+
+  .modalLogin .conteudo p.aviso
+  {
+    padding-bottom: 30px;
+    color: red;
+    font-size: 0.9em;
+    text-align: left;
+    margin: -10px 5% 0px;
+    display: none;
+  }
+
+  .modalLogin .conteudo form{padding-top: 30px;}
+  .modalLogin .conteudo form input
+  {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+    border: 0px;
+    border-bottom: 2px solid #a5a7a9;
+    font-size: 1.3em;
+    color: #6f6f6f;
+  }
+
+  .modalLogin .conteudo form input:focus{border-color: #02428e;}
+
+  .modalLogin .conteudo form .row{padding-top: 0px; width: 90%; margin-left: 5%;}
+  .modalLogin .conteudo form .row button
+  {
+    float: left;
+    padding: 10px 25px;
+    background-color: #02428e;
+    border: 0px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .modalLogin .conteudo form .row button:hover{background-color: #3e7bc1;}
+
+  .modalLogin .conteudo form .row a
+  {
+    font-size: 1em;
+    color: #02428e;
+    float: right;
+    padding-top: 9px;
+  }
+
+  .modalLogin .conteudo p.cadastro{padding-top: 20px; color: #5f6063;}
+  .modalLogin .conteudo p.cadastro a{font-weight: bold; color: #02428e;}
+
+  .modalLogin .conteudo button.fecha
+  {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+  }
+
+  .modalLogin .conteudo button.fecha img{width: 30px;}
+
+
+  .modalLogin .fundo
+  {
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%; height: 100%;
+  }
+
+
+  .modalLogin form .campo-cpf{position: relative;}
+  .modalLogin form .campo-cpf i
+  {
+    color: #17b123;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 1.3em;
+    opacity: 0;
+  }
+
+  .modalLogin form input::-webkit-input-placeholder{color: #a5a7a9;}
+  .modalLogin form input::-moz-placeholder{color: #a5a7a9;}
+  .modalLogin form input:-ms-input-placeholder{color: #a5a7a9;}
+  .modalLogin form input:-moz-placeholder{color: #a5a7a9;}
+  .modalLogin form input::placeholder{color: #a5a7a9;}
+
+
+
+
+  .modalServicos
+  {
+    position: fixed;
+    top: 0px; left: 0px;
+    width: 100%; height: 100%;
+    z-index: 999;
+    opacity: 0;
+    display: none;
+  }
+
+  .modalServicos .bloco
+  {
+    z-index: 100;
+    width: calc(80% - 40px);
+    max-width: calc(500px - 40px);
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    max-height: 70%;
+    /* overflow-y: auto; */
+    position: relative;
+  }
+
+  .modalServicos .bloco #txtTitulo,
+  .modalServicos .bloco #txtTituloExame
+  {
+    color: #2f4074;
+    font-size: 1.7em;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .modalServicos .bloco #txtDescricao,
+  .modalServicos .bloco p
+  {
+    text-align: justify;
+    font-size: 1.1em;
+    padding-bottom: 30px;
+    color: #8a8a8a;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .modalServicos .bloco button.agenda
+  {
+    border: 2px solid #0094d6;
+    color: #0094d6;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 12px 30px;
+    border-radius: 15px;
+  }
+
+  .modalServicos .bloco button.agenda:hover
+  {
+    background-color: #ce3133;
+    border-color: #ce3133;
+    color: #fff;
+  }
+
+
+  .modalServicos .bloco button.fecha
+  {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+  }
+
+  .modalServicos .bloco button.fecha img{width: 30px;}
+
+
+  .modalServicos .fundoPreto
+  {
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%; height: 100%;
+  }
+
+
+  /* --- Servicos Interno --- */
+  .servico-interno .border
+  {
+    border-right: 2px solid #cbcbcb;
+  }
+
+
+  /* ---- Quem Somos ---- */
+  .banner-geral
+  {
+    /*background-size: 100% auto; padding: 100px 0px;*/
+    background-position: center;
+    color: #fff;
+    padding: 30px 0px;
+    background-size: cover !important;
+
+  }
+
+  .banner-geral .titulo{font-size: 3.5em; padding-bottom: 30px;}
+  .banner-geral .subtitulo{font-size: 1.5em;}
+
+  .btn-vermelho
+  {
+    border: 0px;
+    background-color: #ce3133;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+
+
+  .btn-azul
+  {
+    text-transform: uppercase;
+    background: #0094d6;
+    border: 0px;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px 50px;
+    border-radius: 7px;
+  }
+
+  .btn-azul:hover
+  {
+    background-color: #27448b;
+  }
+
+
+  /* ---- Ajuda ---- */
+  .quer-ajuda .item
+  {
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 400px;
+  }
+
+
+  /* ---- Trabalhe Conosco ---- */
+
+  form .row{padding: 20px 0px;}
+  form .row label
+  {
+    color: #8f8f8f;
+    font-size: 1em;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  form .row input,
+  form .row textarea
+  {
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+  }
+
+  form .row textarea{height: auto;}
+
+  form .row .select
+  {
+    width: 100%; height: 40px;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    background-color: #fff;
+    position: relative;
+  }
+
+
+  form .row .select select
+  {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+
+    border: 0px;
+    background: transparent;
+    z-index: 10;
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%; height: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+  form .row .select i
+  {
+    color: #0094d6;
+    font-size: 1.5em;
+    position: absolute;
+    top: 8px; right: 5px;
+    z-index: 9;
+  }
+
+
+
+  /* ---- NewsLetter ---- */
+
+  .newsletter
+  {
+    background-image: url("../img/tracado.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+    text-align: center;
+    background-size: auto 100%;
+  }
+
+  .newsletter h4{font-size: 3.5em; color: #03428c;}
+  .newsletter h4 span{font-weight: normal;}
+
+  .newsletter p{color: #989595; font-size: 1.3em; padding-bottom: 40px;}
+
+  .newsletter form{padding-bottom: 30px;}
+  .newsletter input
+  {
+    width: 300px;
+    display: block;
+    margin: 5px auto;
+    border: 1px solid #b7b4b4;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+
+  .newsletter button
+  {
+    background: #03428c;
+    border: 0px;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 1.05em;
+  }
+
+  .newsletter button:hover{background: #3e7bc1;}
+
+  .newsletter .alerta p{font-size: 2em; font-weight: bold;}
+  .newsletter .alerta.sucesso p{color: #0095db;}
+  .newsletter .alerta.erro p{color: #ff1529;}
+
+
+  a.scroll
+  {
+    color: #fff;
+    font-size: 4em;
+    padding-top: 40px;
+    display: block;
+  }
+
+
+  /**
+   * -----------------------------------------------
+   *                 LANDING PAGE
+   *                  //SOSDR//
+   * ----------------------------------------------
+   */
+
+
+    .quem-somos .none-img{display: none;}
+
+
+    /* === SOBRE A SOS === */
+    .quem-somos .barra-sobre{background: #27448b; color: #fff; position: relative;}
+    .quem-somos .barra-sobre .imagem
+    {
+      width: 50%;
+      float: left;
+      background-image: url('../img/quem-somos/fachada.jpg');
+      background-color: #27448b;
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 100%;
+      /* background-size: auto 100%; */
+      background-position: left;
+    }
+
+    .quem-somos .barra-sobre .texto
+    {
+      width: calc(50% - 60px);
+      float: right;
+      padding: 50px 0px 50px 60px;
+    }
+
+
+    .quem-somos .barra-sobre .texto h1
+    {
+      font-size: 3.5em;
+      padding-bottom: 30px;
+    }
+
+    .quem-somos .barra-sobre .texto h1 span{font-size: 0.5em;}
+    .quem-somos .barra-sobre .texto p{letter-spacing: 2px; line-height: 1.4em;}
+
+
+
+    /* === Missão Visão e Valores === */
+    .quem-somos .barra-mvv{padding: 40px 0px;}
+    .quem-somos .barra-mvv .item img{width: 100px; float: left; padding-right: 20px;}
+
+    .quem-somos .barra-mvv .item .texto
+    {
+      width: calc(100% - 120px);
+      float: right;
+    }
+
+    .quem-somos .barra-mvv .item h3
+    {
+      color: #27448b;
+      font-size: 1.5em;
+      font-weight: lighter;
+    }
+
+    .quem-somos .barra-mvv .item h3 span{font-weight: bold;}
+    .quem-somos .barra-mvv .item hr
+    {
+      width: 70px; height: 1px;
+      border: 0px; background-color: #0094d6;
+      float: left;
+    }
+
+    .quem-somos .barra-mvv .item p,
+    .quem-somos .barra-mvv .item ul
+    {
+      display: block;
+      padding-top: 25px;
+      color: #8b8b8b;
+    }
+
+    .quem-somos .barra-mvv .item ul{list-style-type: disc; float: left; width: calc(50% - 20px);}
+    .quem-somos .barra-mvv .item ul li
+    {
+      padding: 5px 0px;
+      color: #0094d6;
+    }
+
+    .quem-somos .barra-mvv .item ul li p{padding: 0px;}
+
+    .quem-somos .owl-theme .owl-dots .owl-dot.active span,
+    .quem-somos.owl-theme .owl-dots .owl-dot:hover span
+    {
+      background: #0094d9;
+      border-color: #0094d9;
+    }
+
+    .quem-somos .owl-theme .owl-dots .owl-dot span
+    {
+      border: 1px solid #8f8f8f;
+      background: #fff;
+    }
+
+
+    /* === Video === */
+    .quem-somos .barra-video
+    {
+      /* background-image: url('../img/quem-somos/video.png'); */
+      height: 400px;
+      width: 100%;
+      position: relative;
+    }
+
+    .quem-somos .bg-video
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+    }
+
+    .quem-somos .bg-video video
+    {
+      height: 100%;
+    }
+
+    .quem-somos .barra-video button
+    {
+      background: transparent;
+      border: 0px;
+    }
+
+    .quem-somos .barra-video button i{color: #fff; font-size: 10em;}
+    .quem-somos .barra-video button:hover i{font-size: 12em;}
+
+
+    /* === VEIA === */
+    .quem-somos .barra-slider{background: #0094d6; color: #fff; position: relative;}
+    .quem-somos .barra-slider .imagem
+    {
+      width: 50%;
+      float: left;
+      background-image: url('../img/quem-somos/familia.jpg');
+      background-color: #0094d6;
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 100%;
+      background-size: auto 100%;
+      background-position: right;
+      z-index: 100;
+    }
+
+    .quem-somos .barra-slider .alinha
+    {
+      width: 50%;
+      float: right;
+    }
+
+    .quem-somos .barra-slider .alinha .item .p-15{padding: 40px;}
+    .quem-somos .barra-slider .alinha .item h4
+    {
+      color: #27448b;
+      font-size: 2em;
+      line-height: 1em;
+      letter-spacing: 0px;
+      padding-bottom: 15px;
+    }
+
+    .quem-somos .barra-slider .alinha .item hr
+    {
+      width: 70px; height: 1px;
+      border: 0px; background-color: #dc5052;
+      float: left;
+    }
+
+    .quem-somos .barra-slider .alinha .item p
+    {
+      padding-top: 30px;
+      font-size: 1.1em;
+      text-align: left;
+      letter-spacing: 2px;
+      line-height: 1.4em;
+    }
+
+    .quem-somos .barra-slider .owl-theme .owl-dots
+    {
+      position: absolute;
+      width: 200%;
+      left: -100%;
+    }
+
+    .quem-somos .barra-slider .alinha-slide{position: relative;}
+
+    .quem-somos .barra-slider .btn-direita,
+    .quem-somos .barra-slider .btn-esquerda
+    {
+      position: absolute;
+      top: 0px;
+      height: 100%;
+      z-index: 200;
+    }
+
+    .quem-somos .barra-slider .btn-direita button,
+    .quem-somos .barra-slider .btn-esquerda button
+    {
+      color: #fff;
+      border: 0px;
+      background-color: transparent;
+      font-size: 2.5em;
+    }
+
+
+    .quem-somos .barra-slider .btn-direita{right: 0px;}
+    .quem-somos .barra-slider .btn-esquerda{left: 0px;}
+
+
+    /* === Icones === */
+    .quem-somos .barra-icones{padding: 100px 0px;}
+    .quem-somos .barra-icones .item
+    {
+      float: left;
+      width: calc(100% / 4);
+      height: 300px;
+      cursor: pointer;
+      padding-bottom: 30px;
+    }
+
+     .quem-somos .barra-icones .item p
+     {
+       color: #8b8b8b;
+       width: 80%;
+       margin: 0 auto;
+       display: block;
+     }
+
+    .quem-somos .barra-icones .item .imagem
+    {
+      width: 150px; height: 150px;
+      background-color: #0094d6;
+      border: 3px solid #0094d6;
+      display: block; margin: 0 auto 30px;
+      border-radius: 100%;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .quem-somos .barra-icones .item:nth-child(1) .imagem{background-image: url('../img/quem-somos/icones/recepcao.png');}
+    .quem-somos .barra-icones .item:nth-child(2) .imagem{background-image: url('../img/quem-somos/icones/comunicacao.png');}
+    .quem-somos .barra-icones .item:nth-child(3) .imagem{background-image: url('../img/quem-somos/icones/triagem.png');}
+    .quem-somos .barra-icones .item:nth-child(4) .imagem{background-image: url('../img/quem-somos/icones/analise.png');}
+    .quem-somos .barra-icones .item:nth-child(5) .imagem{background-image: url('../img/quem-somos/icones/consultorio.png');}
+    .quem-somos .barra-icones .item:nth-child(6) .imagem{background-image: url('../img/quem-somos/icones/odonto.png');}
+    .quem-somos .barra-icones .item:nth-child(7) .imagem{background-image: url('../img/quem-somos/icones/banheiro.png');}
+
+   .quem-somos .barra-icones .item:nth-child(5){margin-left: calc(25% / 2);}
+
+   .quem-somos .barra-icones .item:hover .imagem{border-color: #dc5052; background-size: auto 130%;}
+
+   .quem-somos .barra-icones .item:nth-child(1):hover .imagem{background-image: url('../img/quem-somos/fotos/recepcao.jpg');}
+   .quem-somos .barra-icones .item:nth-child(2):hover .imagem{background-image: url('../img/quem-somos/fotos/comunicacao.jpg');}
+   .quem-somos .barra-icones .item:nth-child(3):hover .imagem{background-image: url('../img/quem-somos/fotos/triagem.jpg');}
+   .quem-somos .barra-icones .item:nth-child(4):hover .imagem{background-image: url('../img/quem-somos/fotos/analise.jpg');}
+   .quem-somos .barra-icones .item:nth-child(5):hover .imagem{background-image: url('../img/quem-somos/fotos/consultorio.jpg');}
+   .quem-somos .barra-icones .item:nth-child(6):hover .imagem{background-image: url('../img/quem-somos/fotos/odonto.jpg');}
+   .quem-somos .barra-icones .item:nth-child(7):hover .imagem{background-image: url('../img/quem-somos/fotos/banheiro.jpg');}
+
+
+   /* === Roleta Russa === */
+   .quem-somos .barra-bola{background-color: #eee; padding: 80px 0px;}
+   .quem-somos .barra-bola .texto
+   {
+     display: block;
+     margin: 0 auto;
+     width: 100%;
+     max-width: 500px;
+     text-align: center;
+   }
+
+   .quem-somos .barra-bola .texto h2
+   {
+     color: #27448b;
+     font-size: 1.8em;
+     padding-bottom: 10px;
+   }
+
+   .quem-somos .barra-bola .texto p{color: #8b8b8b;}
+
+   .quem-somos .barra-bola img.tudo
+   {
+     display: block;
+     margin: 70px auto -5px;
+   }
+
+   /* Roda a Roda jequiti */
+   .quem-somos .barra-bola .conteudo{position: relative;}
+   .quem-somos .barra-bola .circulo
+   {
+      width: 800px;
+      height: 400px;
+      overflow-y: hidden;
+      display: block;
+      margin: 0 auto;
+   }
+
+  .quem-somos .barra-bola .circulo img{width: 100%; transition: all 2s; transform: rotate(0deg);}
+
+  .quem-somos .barra-bola .conteudo button{border: 0px; background: transparent; font-size: 5em; color: #aeb3bc; cursor: pointer;}
+  .quem-somos .barra-bola .conteudo .seta-esquerda,
+  .quem-somos .barra-bola .conteudo .seta-direita
+  {
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+  }
+
+  .quem-somos .barra-bola .conteudo .seta-esquerda{left: 0px;}
+  .quem-somos .barra-bola .conteudo .seta-direita{right: 0px;}
+
+  .quem-somos .barra-bola .gm{position: relative;}
+  .quem-somos .barra-bola .gm .degrade
+  {
+    width: 100%; height: 250px;
+    position: absolute;
+    bottom: 0px; left: 0px;
+    background-image: linear-gradient(transparent, #eee);
+    z-index: 10;
+    display: none;
+}
+
+
+
+
+.modalVd
+{
+  position: fixed;
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  z-index: 999;
+}
+
+.modalVd iframe
+{
+  z-index: 450;
+  width: 70%;
+  height: 70%;
+  position: relative;
+}
+
+.modalVd .fundo-preto
+{
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 300;
+}
