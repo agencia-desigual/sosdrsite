@@ -26,6 +26,31 @@
 
 </style>
 
+<style>
+
+    .btn-whats-fixo
+    {
+        display: block;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 999999;
+    }
+
+    @media (max-width: 425px) {
+
+        .btn-whats-fixo img {
+            width: 300px;
+        }
+    }
+
+</style>
+<div class="btn-whats-fixo">
+    <a class="pulsando" target="_blank" href="https://api.whatsapp.com/send?phone=5508005809771?&amp;text=Quero agendar clinico geral">
+        <img src="<?= base_url() ?>arquivos/assets/img/lps/exame/btn-agenda-exame.png">
+    </a>
+</div>
+
 <!-- Banner -->
 <div class="bg-lp-cardiologia-secao-1" style="background-image: url('<?= base_url() ?>arquivos/assets/img/lp-clinico-geral/bg-secao1.jpg'); ">
 
