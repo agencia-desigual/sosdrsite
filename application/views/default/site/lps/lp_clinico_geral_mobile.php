@@ -37,19 +37,76 @@
         z-index: 999999;
     }
 
-    @media (max-width: 425px) {
+    .ajuda-whats
+    {
+        display: block;
+        width: 100%;
+        left: -30px;
+        position: relative;
+        border: 10px;
+        bottom: -150px;
+    }
 
-        .btn-whats-fixo img {
-            width: 300px;
+    .img-mobile-whats
+    {
+        width: 300px;
+        display: block;
+        left: -10px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 15px;
+        border: 5px solid #75e39e;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 425px) {
+
+        .btn-whats-fixo .mobile
+        {
+            display: none !important;
+        }
+        .img-mobile-whats
+        {
+            width: 85%;
+
+
+            display: block;
+            left: 10%;
+            position: relative;
+            background-color: transparent;
+            border-radius: 0px;
+            border: 0px;
+            text-align: center;
+        }
+        .ajuda-whats
+        {
+            display: block;
+            width: 90%;
+            left: 22px;
+            position: relative;
+            background-color: #fff;
+            border-radius: 60px;
+            border: 5px solid #75e39e;
+            text-align: center;
         }
     }
 
 </style>
-<div class="btn-whats-fixo">
-    <a class="pulsando" target="_blank" href="https://api.whatsapp.com/send?phone=5508005809771?&amp;text=Quero agendar clinico geral">
-        <img src="<?= base_url() ?>arquivos/assets/img/lps/exame/btn-agenda-exame.png">
+<div class="btn-whats-fixo" style=" position: fixed;right: 20px;bottom: 30px;z-index: 99">
+
+    <div class="ajuda-whats">
+        <a href="https://api.whatsapp.com/send?phone=5508005809771?&text=Quero agendar clinico geral" target="_blank">
+            <img class="img-mobile-whats" src="<?= base_url(); ?>arquivos/assets/img/pop-up-whats.png">
+        </a>
+    </div>
+
+    <a class="mobile" href="https://api.whatsapp.com/send?phone=5508005809771?&text=Quero agendar clinico geral" target="_blank">
+        <button style="background-color: #25D366;height: 50px;padding-bottom: 7px; width: 240px;color: #ffffff;font-weight: 800;font-size: 13px;border-radius: 15px; border: none;" formtarget="_blank">
+            <img style="margin-bottom: -8px;" width="30px" src="<?= base_url(); ?>arquivos/assets/img/btn-whtas.png">&nbsp;FALAR NO WHATSAPP
+        </button>
     </a>
 </div>
+
 
 <!-- Banner -->
 <div class="bg-lp-cardiologia-secao-1" style="background-image: url('<?= base_url() ?>arquivos/assets/img/lp-clinico-geral/bg-secao1.jpg'); ">
@@ -352,6 +409,12 @@
 
 </div>
 <div class="clear"></div>
+
+<script>
+    setTimeout(function () {
+        $(".ajuda-whats").css("bottom","0px");
+    },5000);
+</script>
 
 <!-- Plugin OWL -->
 <script src="<?= base_url(); ?>arquivos/plugins/owl.carousel/dist/owl.carousel.min.js"></script>

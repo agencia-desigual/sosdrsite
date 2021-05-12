@@ -101,17 +101,24 @@
 
     @media (max-width: 425px) {
 
-        .btn-whats-fixo img {
-            width: 300px;
-        }
     }
 
 </style>
-<div class="btn-whats-fixo">
-    <a class="pulsando" target="_blank" href="https://api.whatsapp.com/send?phone=5508005809771?&amp;text=Quero agendar implante">
-        <img src="<?= base_url() ?>arquivos/assets/img/lps/exame/btn-agenda-exame.png">
+<div class="btn-whats-fixo" style="display:none; position: fixed;right: 20px;bottom: 30px;z-index: 99">
+
+    <div class="ajuda-whats">
+        <a href="https://api.whatsapp.com/send?phone=5508005809771?&text=Quero agendar clinico geral" target="_blank">
+            <img class="img-mobile-whats" src="<?= base_url(); ?>arquivos/assets/img/pop-up-whats.png">
+        </a>
+    </div>
+
+    <a class="mobile" href="https://api.whatsapp.com/send?phone=5508005809771?&text=Quero agendar clinico geral" target="_blank">
+        <button style="background-color: #25D366;height: 50px;padding-bottom: 7px; width: 240px;color: #ffffff;font-weight: 800;font-size: 13px;border-radius: 15px; border: none;" formtarget="_blank">
+            <img style="margin-bottom: -8px;" width="30px" src="<?= base_url(); ?>arquivos/assets/img/btn-whtas.png">&nbsp;FALAR NO WHATSAPP
+        </button>
     </a>
 </div>
+
     <!-- CONTADOR -->
     <div class="contador-timer">
         <div class="container">
