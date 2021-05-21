@@ -341,7 +341,7 @@ class Ajax extends CI_Controller
                 "name" => $_POST['nome'],
                 "contact" => [
                     "mobile" => $_POST['telefone'],
-                    "email" => (!empty($_POST['email']) ? $_POST['email'] : "")
+                    "email" => (!empty($_POST['email']) ? $_POST['email'] : "emailnaoinformado@gmail.com")
                 ]
             ];
 
