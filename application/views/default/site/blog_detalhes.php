@@ -137,7 +137,7 @@
 
         <a class="mobile" href="https://api.whatsapp.com/send?phone=5508005809771?&text=Quero%20agendar%20um%20checkup%20express" target="_blank">
             <button class="pulsando" style="background-color: #25D366;height: 50px;padding-bottom: 7px; width: 240px;color: #ffffff;font-weight: 800;font-size: 13px;border-radius: 15px; border: none;" formtarget="_blank">
-                Fale sem custo com especialista AGORA
+                Fale sem custo com um atendente AGORA
             </button>
         </a>
     </div>
@@ -308,7 +308,7 @@
                     border: none;
                     position: relative;
                     top: -160px;" formtarget="_blank">
-                            Quero falar com um especialista sem custo
+                            Quero falar com um atendente sem custo
                         </button>
                     </a>
                 </div>

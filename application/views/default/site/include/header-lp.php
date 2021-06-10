@@ -126,7 +126,7 @@
             </button>
 
             <h4 id="txtTituloExame">Agende agora</h4>
-            <p style="text-align: center; padding-top: 10px;">já vamos te direcionar, mas por via das dúvidas deixe seu contato para que um especialista possa entrar em contato</p>
+            <p style="text-align: center; padding-top: 10px;">já vamos te direcionar, mas por via das dúvidas deixe seu contato para que um atendente possa entrar em contato</p>
 
             <form id="formWhats">
 
@@ -159,7 +159,7 @@
             </button>
 
             <h4 id="txtTituloExame">Agende agora</h4>
-            <p style="text-align: center; padding-top: 10px;">já vamos te direcionar, mas por via das dúvidas deixe seu contato para que um especialista possa entrar em contato</p>
+            <p style="text-align: center; padding-top: 10px;">já vamos te direcionar, mas por via das dúvidas deixe seu contato para que um atendente possa entrar em contato</p>
 
             <form id="formContatoLP">
 

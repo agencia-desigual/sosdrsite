@@ -326,12 +326,54 @@ class Ajax extends CI_Controller
         $dados = null;
         $envia = null;
         $curl = null;
+        $ownerUser = 0;
         $token = "16db1517-189a-4874-b5bb-58e1d627abc8";
 
 
         // Verifica se informou a unidade
         if (!empty($_POST['id_unidade']))
         {
+
+            if ($_POST['lp'] == "Landing page Implante")
+            {
+                // Verificando a unidade
+                if($_POST['id_unidade'] == 8) // Bauru
+                {
+                    $ownerUser = "vani.pereira@sosdr.com";
+                }
+                elseif ($_POST['id_unidade'] == 5) // Nova Marilia
+                {
+                    $ownerUser = "anajuliavis2@gmail.com";
+                }
+                elseif ($_POST['id_unidade'] == 4) // Marilia Centro
+                {
+                    $ownerUser = "franciellysantosmeledavi@gmail.com";
+                }
+                else
+                {
+                    $ownerUser = 0;
+                }
+            }
+            elseif ($_POST['lp'] == "Landing page Laboratório")
+            {
+                // Verificando a unidade
+                if($_POST['id_unidade'] == 8) // Bauru
+                {
+                    $ownerUser = "vinicius.pereira@sosdr.com";
+                }
+                elseif ($_POST['id_unidade'] == 5) // Nova Marilia
+                {
+                    $ownerUser = "amandacoutosant@gmail.com";
+                }
+                elseif ($_POST['id_unidade'] == 4) // Marilia Centro
+                {
+                    $ownerUser = "amandacoutosant@gmail.com";
+                }
+                else
+                {
+                    $ownerUser = 0;
+                }
+            }
 
             // inicia a conexão
             $curl = curl_init();
@@ -342,7 +384,8 @@ class Ajax extends CI_Controller
                 "contact" => [
                     "mobile" => $_POST['telefone'],
                     "email" => (!empty($_POST['email']) ? $_POST['email'] : "emailnaoinformado@gmail.com")
-                ]
+                ],
+                "ownerUser" => $ownerUser
             ];
 
             // Array de configuração
@@ -387,6 +430,7 @@ class Ajax extends CI_Controller
                 // Dados para enviar para API
                 $enviaAPI2 = [
                     "title" => $_POST['lp'],
+                    "ownerUser" => $ownerUser
                 ];
 
                 curl_setopt_array($curl2, array(

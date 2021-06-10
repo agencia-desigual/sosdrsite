@@ -138,7 +138,7 @@
                     <form class="contatoLP">
                         <div class="card-form">
 
-                            <h1>Deixe seu contato, um especialista vai entrar em contato ainda hoje!</h1>
+                            <h1>Deixe seu contato, um atendente vai entrar em contato ainda hoje!</h1>
 
 
                             <select name="id_unidade" required>
@@ -452,7 +452,7 @@
             <form class="contatoLP">
                 <div class="card-form">
 
-                    <h1>Deixe seu contato, um especialista vai entrar em contato ainda hoje!</h1>
+                    <h1>Deixe seu contato, um atendente vai entrar em contato ainda hoje!</h1>
 
 
                     <select name="id_unidade" required>

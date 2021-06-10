@@ -81,20 +81,43 @@
 
 </style>
 
-<div class="btn-whats-fixo" style="display:none; position: fixed;right: 20px;bottom: 30px;z-index: 99">
+<?php $url = $_SERVER['REQUEST_URI']; ?>
 
-    <div class="ajuda-whats">
-        <a href="https://api.whatsapp.com/send?phone=5508005809771?&text=Quero%20agendar%20um%20checkup%20express" target="_blank">
-            <img class="img-mobile-whats" src="<?= base_url(); ?>arquivos/assets/img/pop-up-whats.png">
+<?php if (strpos($url, '/blog') === false) : ?>
+
+    <div class="btn-whats-fixo" style="display:none; position: fixed;right: 20px;bottom: 30px;z-index: 99">
+
+        <div class="ajuda-whats">
+            <a href="https://api.whatsapp.com/send?phone=5508005809771?&text=Entre em contato conosco" target="_blank">
+                <img class="img-mobile-whats" src="<?= base_url(); ?>arquivos/assets/img/pop-up-whats.png">
+            </a>
+        </div>
+
+        <a class="mobile" href="https://api.whatsapp.com/send?phone=5508005809771?&amp;text=Entre em contato conosco" target="_blank">
+            <button class="pulsando" style="background-color: #25D366;height: 50px;padding-bottom: 7px;width: 240px;color: #ffffff;font-weight: 800;font-size: 13px;border-radius: 15px;border: none;margin: 0 auto;display: block;" formtarget="_blank">
+                Fale sem custo com um atendente AGORA
+            </button>
         </a>
     </div>
 
-    <a class="mobile" href="https://api.whatsapp.com/send?phone=5508005809771?&text=Quero%20agendar%20um%20checkup%20express" target="_blank">
-        <button style="background-color: #25D366;height: 50px;padding-bottom: 7px; width: 240px;color: #ffffff;font-weight: 800;font-size: 13px;border-radius: 15px; border: none;" formtarget="_blank">
-            <img style="margin-bottom: -8px;" width="30px" src="<?= base_url(); ?>arquivos/assets/img/btn-whtas.png">&nbsp;FALAR NO WHATSAPP
-        </button>
-    </a>
-</div>
+<?php else: ?>
+
+    <div class="btn-whats-fixo" style="display:none; position: fixed;right: 20px;bottom: 30px;z-index: 99">
+
+        <div class="ajuda-whats">
+            <a href="https://api.whatsapp.com/send?phone=5508005809771?&text=Quero fazer um check up express" target="_blank">
+                <img class="img-mobile-whats" src="<?= base_url(); ?>arquivos/assets/img/pop-up-whats.png">
+            </a>
+        </div>
+
+        <a class="mobile" href="https://api.whatsapp.com/send?phone=5508005809771?&amp;text=Quero fazer um check up express" target="_blank">
+            <button class="pulsando" style="background-color: #25D366;height: 50px;padding-bottom: 7px;width: 240px;color: #ffffff;font-weight: 800;font-size: 13px;border-radius: 15px;border: none;margin: 0 auto;display: block;" formtarget="_blank">
+                Fale sem custo com um atendente AGORA
+            </button>
+        </a>
+    </div>
+
+<?php endif;?>
 
 <!-- Footer -->
 <footer>
@@ -161,8 +184,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 <?php
-
-    $url = $_SERVER['REQUEST_URI'];
 
         if (strpos($url, '/blog') === false)
         {
