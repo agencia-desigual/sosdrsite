@@ -88,12 +88,12 @@
     <div class="btn-whats-fixo" style="display:none; position: fixed;right: 20px;bottom: 30px;z-index: 99">
 
         <div class="ajuda-whats">
-            <a href="https://api.whatsapp.com/send?phone=5508005809771?&text=Entre em contato conosco" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=5508005809771?&text=Gostaria de fazer um agendamento" target="_blank">
                 <img class="img-mobile-whats" src="<?= base_url(); ?>arquivos/assets/img/pop-up-whats.png">
             </a>
         </div>
 
-        <a class="mobile" href="https://api.whatsapp.com/send?phone=5508005809771?&amp;text=Entre em contato conosco" target="_blank">
+        <a class="mobile" href="https://api.whatsapp.com/send?phone=5508005809771?&amp;text=Gostaria de fazer um agendamento" target="_blank">
             <button class="pulsando" style="background-color: #25D366;height: 50px;padding-bottom: 7px;width: 240px;color: #ffffff;font-weight: 800;font-size: 13px;border-radius: 15px;border: none;margin: 0 auto;display: block;" formtarget="_blank">
                 Fale sem custo com um atendente AGORA
             </button>
